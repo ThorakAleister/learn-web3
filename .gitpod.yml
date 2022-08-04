@@ -1,5 +1,4 @@
 tasks:
-  - before: printf 'export PATH="%s:$PATH"\n' "/home/gitpod/.local/share/solana/install/active_release/bin" >> $HOME/.bashrc && exit
   - init: yarn
     command: yarn dev
 
