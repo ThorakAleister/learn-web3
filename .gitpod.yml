@@ -1,8 +1,7 @@
 tasks:
-  - before: 'sh -c "$(curl -sSfL https://release.solana.com/stable/install)"'
+  - before: sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
     init: yarn
     command: yarn dev
-      sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
 
 ports:
   - port: 3000
