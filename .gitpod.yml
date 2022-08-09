@@ -1,8 +1,8 @@
 tasks:
-  - before: sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
-      export PATH="/home/gitpod/.local/share/solana/install/active_release/bin:$PATH"
+  - name: Terminal 1
     init: yarn
     command: yarn dev
+    
 ports:
   - port: 3000
     onOpen: open-preview
