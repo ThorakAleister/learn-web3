@@ -1,10 +1,7 @@
 tasks:
-  - name: Terminal 1
+  - before: sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
     init: yarn
     command: yarn dev
-  - name: Terminal 2
-    init: echo 'solana-cli'
-    command: sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
 ports:
   - port: 3000
     onOpen: open-preview
