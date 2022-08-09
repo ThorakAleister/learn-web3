@@ -1,5 +1,5 @@
 tasks:
-  - before: sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
+  - name: Terminal 1
     init: yarn
     command: yarn dev
 
