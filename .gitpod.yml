@@ -1,6 +1,5 @@
 tasks:
   - init: yarn
-  env: PATH:
     command: yarn dev
 
 ports:
