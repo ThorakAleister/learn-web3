@@ -2,9 +2,9 @@ tasks:
   - name: Terminal 1
     init: yarn
     command: yarn dev
-    
+
   - name: Terminal 2
-    init: export PATH="/home/gitpod/.local/share/solana/install/active_release/bin:$PATH"
+    before: export PATH="/home/gitpod/.local/share/solana/install/active_release/bin:$PATH"
     command: sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
 
 ports:
